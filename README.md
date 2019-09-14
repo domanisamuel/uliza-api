@@ -11,12 +11,12 @@ uliza is a stack overflow-like platform for questions and answers
 | DELETE | `/api/users/<int:id>`  | Delete a user|
 
 ### Prerequisites
-Python3 (A programming language)
-Flask (A Python microframework)
-Virtualenv (Stores all dependencies used in the project)
-Pivotal Tracker (A project management tool) (optional)
-Pytest (Tool for testing)
-The app is hosted on heroku
+- Python3 (A programming language)
+- Flask (A Python microframework)
+- Virtualenv (Stores all dependencies used in the project)
+- Pivotal Tracker (A project management tool) (optional)
+- Pytest (Tool for testing)
+- The app is hosted on heroku
 
 ### Getting Started:
 Setting up the app locally.

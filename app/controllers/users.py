@@ -35,6 +35,20 @@ class User(Resource):
             return { 'user': user[0] } ,200
         else:
             return { 'message': 'The user you are looking is not found' } , 404
+
+    # edit a user
+    def put(self,id):
+        user = [ user for user in users if user['id'] == id ]
+        if user:
+            data = request.get_json()
+            user[0]['firstname'] = data['firstname']
+            user[0]['lastname'] = data['lastname']
+            user[0]['email'] = data['email']
+            user[0]['password'] = data['password']
+            return { 'modified user:': user[0] } ,200
+        else:
+            return { 'message': 'user did not update' } ,404
+
     # delete a user
     def delete(self,id):
         user = [ user for user in users if user['id'] == id ]

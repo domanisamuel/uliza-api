@@ -11,7 +11,7 @@ from app.models.users import users_db
 users = users_db()
 
 
-class User(Resource):
+class Users(Resource):
     # get all users
     def get(self):
         return { 'users': users} ,200
@@ -26,3 +26,12 @@ class User(Resource):
         users_data['password'] = data['password']
         users.append(users_data)
         return { 'users': users_data} ,201
+
+class User(Resource):
+    # get a specific user by id
+    def get(self,id):
+        user = [ user for user in users if user['id'] == id ]
+        if user:
+            return { 'user': user[0] } ,200
+        else:
+            return { 'message': 'The user you are looking is not found' } , 404

@@ -35,3 +35,11 @@ class User(Resource):
             return { 'user': user[0] } ,200
         else:
             return { 'message': 'The user you are looking is not found' } , 404
+    # delete a user
+    def delete(self,id):
+        user = [ user for user in users if user['id'] == id ]
+        if user:
+            del users[0]
+            return { 'message:': users } ,204
+        else :
+            return { 'message': 'delete not successful' } ,404

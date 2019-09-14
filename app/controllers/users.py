@@ -18,7 +18,7 @@ class Users(Resource):
     def post(self):
         users_data = {}
         data = request.get_json()
-        users_data['id'] = len(users)+1
+        users_data['user_id'] = len(users)+1
         users_data['firstname'] = data['firstname']
         users_data['lastname'] = data['lastname']
         users_data['email'] = data['email']
@@ -27,17 +27,17 @@ class Users(Resource):
         return { 'users': users_data} ,201
 
 class User(Resource):
-    # get a specific user by id
-    def get(self,id):
-        user = [ user for user in users if user['id'] == id ]
+    # get a specific user by user_id
+    def get(self,user_id):
+        user = [ user for user in users if user['user_id'] == user_id ]
         if user:
             return { 'user': user[0] } ,200
         else:
             return { 'message': 'The user you are looking is not found' } , 404
 
     # edit a user
-    def put(self,id):
-        user = [ user for user in users if user['id'] == id ]
+    def put(self,user_id):
+        user = [ user for user in users if user['user_id'] == user_id ]
         if user:
             data = request.get_json()
             user[0]['firstname'] = data['firstname']
@@ -49,8 +49,8 @@ class User(Resource):
             return { 'message': 'user did not update' } ,404
 
     # delete a user
-    def delete(self,id):
-        user = [ user for user in users if user['id'] == id ]
+    def delete(self,user_id):
+        user = [ user for user in users if user['user_id'] == user_id ]
         if user:
             del users[0]
             return { 'message:': users } ,204

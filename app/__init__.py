@@ -8,3 +8,4 @@ def home():
 
 # import routes
 from app.routes.users import api_endpoint
+from app.routes.posts import api_endpoint

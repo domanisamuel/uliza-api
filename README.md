@@ -18,7 +18,7 @@ post schema:
   {
     "post_id": 3,
     "tag": "question",
-    "content":"What tech stacks does Airbnb use?"
+    "content":"What tech stack does Airbnb use?"
   }
 
 ```
@@ -26,7 +26,7 @@ post schema:
   {
     "post_id": 5,
     "tag": "answer",
-    "content":"From what i know, they use React and Rails(ruby)."
+    "content":"From what I know, they use React and Rails."
   }
 ```
 

@@ -14,22 +14,21 @@ uliza is a stack overflow-like platform for questions and answers
 
 post schema:
 ```
-[
+
   {
     "post_id": 3,
     "tag": "question",
     "content":"What tech stacks does Airbnb use?"
   }
-]
+
 ```
 ```
-[
+```
   {
     "post_id": 5,
     "tag": "answer",
     "content":"From what i know, they use React and Rails(ruby)."
   }
-]
 
 #### users endpoints
 | Action| Endpoint | Functionality | 
@@ -42,7 +41,6 @@ post schema:
 
 user schema:
 ```
-[
   {
     "user_id":2
     "firstname": "Eric",
@@ -50,7 +48,7 @@ user schema:
     "email":"eriko@bigtymz.comedy",
     "password":"cheka254"
   }
-]
+
 ```
 
 ### Prerequisites

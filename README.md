@@ -1,14 +1,24 @@
 # uliza-api
 uliza is a stack overflow-like platform for questions and answers
 
+##### a `post` can either be a question or an answer, what differentiates them are `tags`
+#### posts endpoints
+| Action| Endpoint | Functionality | 
+|----------|----------|---------------|
+| GET | `/api/posts`  | Get all posts|
+| POST | `/api/posts`  | add a post|
+| GET | `/api/posts/<int:post_id>`  | Get a single post|
+| PUT | `/api/posts/<int:post_id>`  | EDIT a post|
+| DELETE | `/api/posts/<int:post_id>`  | Delete a post|
+
 #### users endpoints
 | Action| Endpoint | Functionality | 
 |----------|----------|---------------|
 | GET | `/api/users`  | Get all users|
 | POST | `/api/users`  | add a user|
-| GET | `/api/users/<int:id>`  | Get a single user|
-| PUT | `/api/users/<int:id>`  | EDIT a user|
-| DELETE | `/api/users/<int:id>`  | Delete a user|
+| GET | `/api/users/<int:user_id>`  | Get a single user|
+| PUT | `/api/users/<int:user_id>`  | EDIT a user|
+| DELETE | `/api/users/<int:user_id>`  | Delete a user|
 
 ### Prerequisites
 - Python3 (A programming language)

@@ -3,7 +3,6 @@
 from app import app
 from flask import jsonify, request
 from flask_restful import Resource
-# from flask.ext.bcrypt import Bcrypt
 
 # import models
 from app.models.users import users_db

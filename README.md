@@ -2,12 +2,6 @@
 uliza is a stack overflow-like platform for questions and answers
 
 #### users endpoints
-- `POST /api/users` to add a user
-- `GET /api/users` to fetch all users
-- `GET /api/users/<int:id>` to fetch a specific / single user
-- `PUT /api/users/<int:id>'=`  to modify a user
-- `DELETE /api/users/<int:id>`  to delete a user
-
 | Action| Endpoint | Functionality | 
 |----------|----------|---------------|
 | GET | `/api/users`  | Get all users|

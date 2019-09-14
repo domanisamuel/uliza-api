@@ -23,12 +23,12 @@ post schema:
 
 ```
 ```
-```
   {
     "post_id": 5,
     "tag": "answer",
     "content":"From what i know, they use React and Rails(ruby)."
   }
+```
 
 #### users endpoints
 | Action| Endpoint | Functionality | 

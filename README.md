@@ -1,7 +1,7 @@
 # uliza-api
 uliza is a stack overflow-like platform for questions and answers
 
-##### a `post` can either be a question or an answer, what differentiates them are `tags`
+- A `post` can either be a question or an answer, what differentiates them are `tags`
 #### posts endpoints
 | Action| Endpoint | Functionality | 
 |----------|----------|---------------|

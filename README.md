@@ -1,7 +1,6 @@
 # uliza-api
 uliza is a stack overflow-like platform for questions and answers
 
-- A `post` can either be a question or an answer, what differentiates them are `tags`
 #### posts endpoints
 | Action| Endpoint | Functionality | 
 |----------|----------|---------------|
@@ -11,6 +10,27 @@ uliza is a stack overflow-like platform for questions and answers
 | PUT | `/api/posts/<int:post_id>`  | EDIT a post|
 | DELETE | `/api/posts/<int:post_id>`  | Delete a post|
 
+- A `post` can either be a question or an answer, what differentiates them are `tags`
+
+post schema:
+```
+[
+  {
+    "post_id": 3,
+    "tag": "question",
+    "content":"What tech stacks does Airbnb use?"
+  }
+]
+```
+```
+[
+  {
+    "post_id": 5,
+    "tag": "answer",
+    "content":"From what i know, they use React and Rails(ruby)."
+  }
+]
+
 #### users endpoints
 | Action| Endpoint | Functionality | 
 |----------|----------|---------------|
@@ -19,6 +39,19 @@ uliza is a stack overflow-like platform for questions and answers
 | GET | `/api/users/<int:user_id>`  | Get a single user|
 | PUT | `/api/users/<int:user_id>`  | EDIT a user|
 | DELETE | `/api/users/<int:user_id>`  | Delete a user|
+
+user schema:
+```
+[
+  {
+    "user_id":2
+    "firstname": "Eric",
+    "lastname": "Omondi",
+    "email":"eriko@bigtymz.comedy",
+    "password":"cheka254"
+  }
+]
+```
 
 ### Prerequisites
 - Python3 (A programming language)

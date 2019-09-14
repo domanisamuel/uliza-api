@@ -2,6 +2,7 @@
 # this is where our businesss logic lies
 from app import app
 from flask import jsonify
+from flask_restful import Resource
 
 # import models
 from app.models.users import users_db
@@ -9,6 +10,8 @@ from app.models.users import users_db
 users = users_db()
 
 
-# get all users
-def get_users():
-    return jsonify({ 'users': users })
+class User(Resource):
+    # get all users
+    def get(self):
+        return jsonify({ 'users': users})
+    

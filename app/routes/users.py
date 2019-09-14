@@ -1,5 +1,9 @@
 from app import app
-from controllers.users import get_users
+from flask import jsonify
+from flask_restful import Api
 
-@app.route('/api/users', methods=['GET'])
-get_users()
+# import controllers
+from app.controllers.users import User
+
+api_endpoint = Api(app)
+api_endpoint.add_resource(User, '/api/users')

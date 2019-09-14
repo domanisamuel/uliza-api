@@ -1,5 +1,5 @@
 # users model
 # create an empty list
-users=[]
+users=['sam', 'willy']
 def users_db():
     return users

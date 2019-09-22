@@ -13,7 +13,7 @@ uliza is a stack overflow-like platform for questions and answers
 - A `post` can either be a question or an answer, what differentiates them are `tags`
 
 post schema:
-```
+```json
 
   {
     "post_id": 3,
@@ -22,7 +22,7 @@ post schema:
   }
 
 ```
-```
+```json
   {
     "post_id": 5,
     "tag": "answer",
@@ -40,9 +40,9 @@ post schema:
 | DELETE | `/api/users/<int:user_id>`  | Delete a user|
 
 user schema:
-```
+```json
   {
-    "user_id":2
+    "user_id":2,
     "firstname": "Eric",
     "lastname": "Omondi",
     "email":"eriko@bigtymz.comedy",

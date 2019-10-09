@@ -4,11 +4,11 @@ uliza is a stack overflow-like platform for questions and answers
 #### posts endpoints
 | Action| Endpoint | Functionality | 
 |----------|----------|---------------|
-| GET | `/api/posts`  | Get all posts|
-| POST | `/api/posts`  | add a post|
-| GET | `/api/posts/<int:post_id>`  | Get a single post|
-| PUT | `/api/posts/<int:post_id>`  | EDIT a post|
-| DELETE | `/api/posts/<int:post_id>`  | Delete a post|
+| GET | `/api/v1/posts`  | Get all posts|
+| POST | `/api/v1/posts`  | add a post|
+| GET | `/api/v1/posts/<int:post_id>`  | Get a single post|
+| PUT | `/api/v1/posts/<int:post_id>`  | EDIT a post|
+| DELETE | `/api/v1/posts/<int:post_id>`  | Delete a post|
 
 - A `post` can either be a question or an answer, what differentiates them are `tags`
 
@@ -33,11 +33,11 @@ post schema:
 #### users endpoints
 | Action| Endpoint | Functionality | 
 |----------|----------|---------------|
-| GET | `/api/users`  | Get all users|
-| POST | `/api/users`  | add a user|
-| GET | `/api/users/<int:user_id>`  | Get a single user|
-| PUT | `/api/users/<int:user_id>`  | EDIT a user|
-| DELETE | `/api/users/<int:user_id>`  | Delete a user|
+| GET | `/api/v1/users`  | Get all users|
+| POST | `/api/v1/users`  | add a user|
+| GET | `/api/v1/users/<int:user_id>`  | Get a single user|
+| PUT | `/api/v1/users/<int:user_id>`  | EDIT a user|
+| DELETE | `/api/v1/users/<int:user_id>`  | Delete a user|
 
 user schema:
 ```json

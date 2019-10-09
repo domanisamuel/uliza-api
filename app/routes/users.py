@@ -7,5 +7,5 @@ from app.controllers.users import Users
 from app.controllers.users import User
 
 api_endpoint = Api(app)
-api_endpoint.add_resource(Users, '/api/users')
-api_endpoint.add_resource(User, '/api/users/<int:user_id>')
+api_endpoint.add_resource(Users, '/api/v1/users')
+api_endpoint.add_resource(User, '/api/v1/users/<int:user_id>')
